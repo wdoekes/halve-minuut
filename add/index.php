@@ -3,7 +3,7 @@
 if (strlen(@$_POST['words'])) {
     $words = array();
     foreach (explode("\n", $_POST['words']) as $word) {
-        $word = preg_replace('/^\\s+|\\s+\$|#.*/', '', $word);
+        $word = preg_replace('/^\\s+|\\s+$|#.*/', '', $word);
         if ($word) {
             array_push($words, $word);
         }
