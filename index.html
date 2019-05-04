@@ -70,16 +70,15 @@
       <div class="blog-masthead">
         <div class="container">
           <nav class="nav">
-            <a class="nav-link active" href="">Re-start</a>
-            <!--<a class="nav-link" href="#">Running</a>--><!-- FIXME: set when running ... -->
+            <a class="nav-link active" href="">Reset game</a>
           </nav>
         </div>
       </div>
 
       <div class="blog-header visible"><!-- disable on Setup -->
         <div class="container">
-          <h1 class="blog-title">Halve Minuut <em>Eigen Editie</em></h1>
-          <p class="lead blog-description">... met een eigen woordenlijst.</p>
+          <h1 class="blog-title">Halve Minuut <em style="color:#17a2b8;">Eigen Editie</em></h1>
+          <p class="lead blog-description">... met eigen woordenlijsten</p>
         </div>
       </div>
     </header>
@@ -94,11 +93,12 @@
             <h2 class="blog-post-title">Instellingen</h2>
 
             <p>
-              Voor dit spel moet je eerst teams maken. Vul de spelers in (minimaal 2), en wij maken teams voor je.
+              Voor dit spel moet je eerst teams maken. Vul de spelers
+              in (een veelvoud van 2), en wij maken teams voor je.
             </p>
 
             <form onsubmit="return wizard.nullConfig(this);">
-              <input type="submit" class="btn btn-info" value="Volgende">
+              <input type="submit" class="btn btn-info" value="Begin">
             </form>
           </div><!-- /.blog-post -->
 
@@ -205,14 +205,14 @@
           <div class="sidebar-module sidebar-module-inset">
             <h4>Wie spelen?</h4>
             <div id="info-teams">
-              <p><em>Game is not niet gestart</em></p>
+              <p><em>Teams moeten nog gemaakt</em></p>
             </div>
           </div>
 
           <div class="sidebar-module">
             <h4>Spelinfo</h4>
             <div id="info-game">
-              <p><em>Game is not niet gestart</em></p>
+              <p><em>Het spel is nog niet gestart</em></p>
             </div>
           </div>
         </aside><!-- /.blog-sidebar -->
@@ -248,7 +248,7 @@
     </script>
     <script>
       $(function() {
-      // make the +-style form work
+        // make the +-style form work
         $(document).on('click', '.btn-add', function(e) {
           e.preventDefault();
           var currentEntry = $(this).closest('.entry'),
@@ -263,7 +263,7 @@
           e.preventDefault();
           $(this).closest('.entry').remove();
         });
-      // eat ENTER in text forms
+        // eat ENTER in text forms
         $(document).on('keypress', 'input[type=text]', function(e) {
           return ((e || event).keyCode != 13);
         });

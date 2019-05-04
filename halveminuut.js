@@ -30,11 +30,15 @@ halveminuut.Config = class {
         return newList;
     }
     setPlayers(players) {
-        if (players.length < 2)
-            players.push('Alice');
-        if (players.length < 2)
-            players.push('Bob');
-        this.players = players;
+        this.players = players.slice();
+
+        // Add players so we have a multiple of 2
+        if (this.players.length < 2 || (this.players.length % 2) != 0) {
+            this.players.push('Alice');
+            if (this.players.length < 2)
+                this.players.push('Bob');
+        }
+
         this.setTeams(this.generateTeams());
     }
     getPlayers() {
