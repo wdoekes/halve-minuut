@@ -1,0 +1,336 @@
+# fantasie/boeken
+
+Superman
+Spiderman
+Batman
+Asterix en Obelix
+Astrid Lindgren
+Bröderna Lejonhjärta
+Dagobert Duck
+De Grijze Jager
+De Gruwelijke Badmeester
+De Gruwelijke Generaal
+Dik Trom
+Dolfje Weerwolfje
+Donald Duck
+Draco Malfidus
+Geronimo Stilton
+Harry Potter
+J.K. Rowling
+Jerommeke
+John Flanagan
+Jozua Douglas
+Kwik, Kwek en Kwak
+Lambik
+Lucius Malfidus
+Mickey Mouse
+Minnie Mouse
+Paul van Loon
+Pippi Langkous/Långstrump
+Ronja Rövardotter
+Schanulleke
+Sneep
+Suske en Wiske
+Thea Beckman
+Voldemort
+Winnie de Poeh
+Zweinstein
+geldpakhuis
+woordenboek
+
+# zangers/liedjes
+
+Anouk
+Don't stop me now
+Justin Bieber
+K3
+Michael Jackson
+Notenkraker
+Queen
+Thriller
+Tsjaikovski
+
+# programmeertalen
+
+C++
+Python
+Ruby
+Scratch
+
+# eten/drinken
+
+Amstel
+Coca-Cola
+Grolsch
+Heineken
+Lams Vindaloo
+aardappels
+appel
+appelboom
+appelsap
+banaan
+bier
+komkommer
+mango
+patat
+peer
+schouderham
+sinaasappel
+sla
+tomaat
+whisky
+
+# kleren
+
+bergschoenen
+capuchontrui
+laarzen
+maillot
+muts
+regenjas
+sloffen
+sokken
+thermobroek
+zwembroek
+
+# sporten
+
+atlethiek
+badminton
+basketbal
+curling
+frisbee
+hockey
+rugby
+schaatsen
+skieën
+tennis
+voetbal
+zwemmen
+
+# topo: Nederland
+
+Utrecht
+Noord-Holland
+Zuid-Holland
+Zeeland
+Limburg
+Rotterdam
+Assen
+Drachten
+Groningen
+Leeuwarden
+Amsterdam
+Texel
+Vlieland
+Terschelling
+Ameland
+Schiermonnikoog
+Rijn
+Maas
+Waal
+IJsselmeer
+
+# topo: wereldsteden
+
+Beijing
+Berlijn
+Bremen
+Helsinki
+Jeruzalem
+Londen
+Moskou
+Parijs
+Stockholm
+
+# topo: landen
+
+Argentinië
+Australië
+Bosnië-Herzegovina
+Canada
+China
+Estland
+India
+Indonesië
+Israël
+Italië
+Japan
+Kroatie
+Letland
+Litauwen
+Mumbai
+Nieuw Zeeland
+Portugal
+Rome
+Spanje
+Suriname
+Tsjechië
+Vaticaanstad
+Verenigde Staten
+Washington
+Zweden
+
+# topo: overig
+
+Scandinavië
+Balkan
+(De) Baltische staten
+Joegoslavië
+Sahara
+
+# kruiden/etc.
+
+basilicum
+kaneel
+kerriepoeder
+komijnzaad
+oregano
+poedersuiker
+stroop
+tijm
+
+# muziek
+
+fluit
+gitaar
+kwartet
+orkest
+piano
+trompet
+
+# voertuigen/merken
+
+Audi
+Mercedes
+Peugeot
+auto
+bakfiets
+boot
+brommer
+fiets
+scooter
+skateboard
+tank
+vliegtuig
+
+# electronica
+
+DVD-speler
+Raspberry Pi
+Android
+Windows
+computer
+lamp
+laptop
+magnetron
+tablet
+televisie
+
+# spelletjes
+
+Boomgaard
+Cluedo
+Dominion
+Kolonisten van Catan
+Lego
+Magic Maze
+Rummikub
+Scrabble
+Stef Stuntpiloot
+dammen
+galgje
+kwartetten
+memory
+puzzel
+schaken
+schaakbord
+shitheaden
+
+# data/feestdagen
+
+Oud en Nieuw
+11 november
+Pasen
+Sinterklaas
+Kerstavond
+Midzomer
+
+# personen
+
+Donald Trump
+Hillary Clinton
+Nelson Mandela
+Ghandi
+
+# schoolvakken
+
+natuurkunde
+scheikunde
+wiskunde
+biologie
+Nederlands
+
+# bekende plaatsen
+
+Oldehove
+Domtoren
+(The) Big Apple
+(Het) Witte Huis
+
+# geloof/religie
+
+Mohammed
+Jezus
+Boeddha
+
+# geometrie/wiskunde
+
+kwadraat
+kubus
+vierkant
+driehoek
+cirkel
+
+# grondstoffen/brandstoffen
+
+ijzererts
+bauxiet
+benzine
+diesel
+aardolie
+
+# dieren
+
+kameel
+dromedaris
+leeuw
+tijger
+
+# ziektes
+
+malaria
+griep
+
+# natuur
+
+vulkaan
+lava
+magma
+zonsverduistering
+maansverduistering
+de evenaar
+zuurstof
+stikstof
+westenwind
+
+# beroepen
+
+kapper
+tuinman
+
+# overig
+
+Olympische Spelen
+nieuwbouwhuis
+liefde

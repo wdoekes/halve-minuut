@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Halve Minuut &mdash; Eigen Editie</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="halveminuut.css" rel="stylesheet">
+
+    <style>
+      .blog-post { display: none; }
+      .blog-post.visible { display: block; }
+      .blog-header { display: none; }
+      .blog-header.visible { display: block; }
+
+      .entry:not(:first-of-type) {
+        margin-top: 10px;
+      }
+
+      #info-time {
+        font-size: 2em;
+        text-align: center;
+        font-family: sans-serif;
+        color: #080;
+      }
+
+      .card {
+        background: #ffe;
+        margin: 1em;
+        padding: 0;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        text-transform: uppercase;
+      }
+      .card ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      .card li {
+        padding: 12px 32px;
+        color: black;
+        font-weight: bold;
+        font-family: sans-serif;
+        letter-spacing: 1px;
+      }
+      .card li:nth-child(odd) {
+        background: #ffc;
+      }
+
+      .done .card {
+        background: #fee;
+      }
+      .done .card li:nth-child(odd) {
+        background: #fcc;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="blog-masthead">
+        <div class="container">
+          <nav class="nav">
+            <a class="nav-link active" href="">Re-start</a>
+            <!--<a class="nav-link" href="#">Running</a>--><!-- FIXME: set when running ... -->
+          </nav>
+        </div>
+      </div>
+
+      <div class="blog-header visible"><!-- disable on Setup -->
+        <div class="container">
+          <h1 class="blog-title">Halve Minuut <em>Eigen Editie</em></h1>
+          <p class="lead blog-description">... met een eigen woordenlijst.</p>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+
+      <div class="row">
+
+        <div class="col-sm-8 blog-main">
+
+          <div class="blog-post visible" id="wizard-null">
+            <h2 class="blog-post-title">Instellingen</h2>
+
+            <p>
+              Voor dit spel moet je eerst teams maken. Vul de spelers in (minimaal 2), en wij maken teams voor je.
+            </p>
+
+            <form onsubmit="return wizard.nullConfig(this);">
+              <input type="submit" class="btn btn-info" value="Volgende">
+            </form>
+          </div><!-- /.blog-post -->
+
+          <div class="blog-post" id="wizard-players">
+            <h2 class="blog-post-title">Spelers</h2>
+            <p class="blog-post-meta">Vul hier de spelers in:</p>
+
+            <form onsubmit="return wizard.playersConfig(this);">
+              <div class="form-group">
+                <div class="entry input-group col-xs-3">
+                  <input class="form-control" name="player[]" type="text" placeholder="Naam"/>
+                  <span class="input-group-btn">
+                    <button class="btn btn-success btn-add" type="button">
+                      <i class="fas fa-plus"></i>
+                    </button>
+                  </span>
+                </div>
+<!--
+                <div class="entry input-group col-xs-3">
+                    <input class="form-control" name="player[]" type="text" placeholder="Naam" value="Seb"/>
+                    <span class="input-group-btn">
+                        <button class="btn btn-danger btn-remove" type="button">
+                          <i class="fas fa-plus"></i>
+                        </button>
+                    </span>
+                </div>
+                <div class="entry input-group col-xs-3">
+                    <input class="form-control" name="player[]" type="text" placeholder="Naam"/>
+                    <span class="input-group-btn">
+                        <button class="btn btn-success btn-add" type="button">
+                          <i class="fas fa-plus"></i>
+                        </button>
+                    </span>
+                </div>
+-->
+</div>
+              <input type="submit" class="btn btn-info" value="Volgende">
+            </form>
+          </div><!-- /.blog-post -->
+
+          <div class="blog-post" id="wizard-teams">
+            <h2 class="blog-post-title">Teams</h2>
+            <p class="blog-post-meta">Dit zijn de teams geworden:</p>
+
+            <form onsubmit="return wizard.teamsConfig(this);">
+              <!--
+              <div class="form-group">
+                <input type="text" name="team[]" class="form-control" placeholder="" readonly="readonly">
+              </div>
+              -->
+              <input type="submit" class="btn btn-info" value="Volgende">
+            </form>
+          </div><!-- /.blog-post -->
+
+<!--
+          <div class="blog-post" id="wizard-words">
+            <h2 class="blog-post-title">Woorden</h2>
+            <p class="blog-post-meta">Kies de woordenlijsten:</p>
+
+            <form onsubmit="return wizard.wordsConfig(this);">
+              <div class="checkbox">
+                <label><input type="checkbox" name="dict[]" value="jsvm" checked="checked">Kinderen (JSVM)</label>
+              </div>
+              <div class="checkbox">
+                <label><input type="checkbox" name="dict[]" value="doekes">Doekes (eigennamen)</label>
+              </div>
+
+              <input type="submit" class="btn btn-info" value="Volgende">
+            </form>
+          </div><!-\- /.blog-post -\->
+-->
+
+          <div class="blog-post" id="game">
+            <h2 class="blog-post-title">XXX is aan zet</h2>
+            <p class="blog-post-meta">YYY mag NIET kijken</p>
+
+            <div id="turn-pre">
+              <p>Is iedereen stil?</p>
+
+              <form onsubmit="return game.startTurn(this);">
+                <input type="submit" class="btn btn-info" value="Klaar voor de start">
+              </form>
+            </div>
+
+            <div id="turn" style="display:none;">
+              <div class="cards"></div>
+              <form class="another" onsubmit="return game.anotherCard(this);">
+                <input type="submit" class="btn btn-info" value="Nog een kaart">
+              </form>
+              <form class="nextturn" style="display:none;" onsubmit="return game.nextTurn(this);">
+                <input type="submit" class="btn btn-info" value="Naar volgende speler">
+              </form>
+            </div>
+          </div>
+
+        </div><!-- /.blog-main -->
+
+        <aside class="col-sm-3 ml-sm-auto blog-sidebar">
+          <div class="sidebar-module">
+            <h4>Tijd deze beurt</h4>
+            <div id="info-time">-</div>
+          </div>
+
+          <div class="sidebar-module sidebar-module-inset">
+            <h4>Wie spelen?</h4>
+            <div id="info-teams">
+              <p><em>Game is not niet gestart</em></p>
+            </div>
+          </div>
+
+          <div class="sidebar-module">
+            <h4>Spelinfo</h4>
+            <div id="info-game">
+              <p><em>Game is not niet gestart</em></p>
+            </div>
+          </div>
+        </aside><!-- /.blog-sidebar -->
+
+      </div><!-- /.row -->
+
+    </main><!-- /.container -->
+
+    <!--
+    <footer class="blog-footer">
+      <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+      <p>
+        <a href="#">Back to top</a>
+      </p>
+    </footer>
+    -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!--<script src="//code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>-->
+    <script src="//code.jquery.com/jquery-3.2.1.min.js" integrity="sha384-xBuQ/xzmlsLoJpyjoggmTEz8OWUFM0/RC5BsqQBDX2v5cMvDHcMakNTNrHIW2I5f" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="vendor/jquery.min.js"><\/script>')</script>
+    <script src="vendor/popper.min.js"></script>
+    <script src="vendor/bootstrap.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+    <script src="halveminuut.js"></script>
+    <script>
+      config = new halveminuut.Config();
+      game = new halveminuut.Game(config);
+      wizard = new halveminuut.Wizard(config, game);
+    </script>
+    <script>
+      $(function() {
+      // make the +-style form work
+        $(document).on('click', '.btn-add', function(e) {
+          e.preventDefault();
+          var currentEntry = $(this).closest('.entry'),
+          container = currentEntry.parent(),
+          newEntry = $(currentEntry.clone()).appendTo(container);
+          newEntry.find('input').val('').focus();
+          container.find('.entry:not(:last) .btn-add')
+          .removeClass('btn-add').addClass('btn-remove')
+          .removeClass('btn-success').addClass('btn-danger').html('<i class="fas fa-minus"></i>');
+        });
+        $(document).on('click', '.btn-remove', function(e) {
+          e.preventDefault();
+          $(this).closest('.entry').remove();
+        });
+      // eat ENTER in text forms
+        $(document).on('keypress', 'input[type=text]', function(e) {
+          return ((e || event).keyCode != 13);
+        });
+      });
+      // Make sure the game doesn't end by accident (note that the timer stops during confirm...)
+      window.onbeforeunload = function(e) {
+        var dialogText = 'PAS OP! Het spel stopt meteen!\n\nWeet je het zeker?';
+        e.returnValue = dialogText;
+        return dialogText;
+      };
+    </script>
+  </body>
+</html><!-- vim: set ts=8 sw=2 sts=2 et ai: -->
